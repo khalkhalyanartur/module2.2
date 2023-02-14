@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  justify-content: start;
+  height: 30px;
+  width: 500px;
+}
+.circle {
+  background-color: #BAD459;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  border-radius: 15px;
+  height: 30px;
+  width: 30px;
+  font-size: 12px;
+}
+
+.pipe {
+  width: 40px;
+  height: 3px;
+  background-color: gray;
+  align-self: center;
+}
+
+
+
+.circle_violet {
+  background-color: #A04999;
+}
+
+.circle_grey {
+  background-color: #CDCDCD;
+}
+
