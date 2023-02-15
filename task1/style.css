@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.battery__frame {
+.battery-frame {
   width: 30vw;
   height: 10vw;
   border: 0.5vw solid black;
