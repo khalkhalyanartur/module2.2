@@ -1,10 +1,11 @@
-.wrapper {
+.diagram {
   display: flex;
   justify-content: start;
   height: 30px;
   width: 500px;
 }
-.circle {
+
+.diagram__circle {
   background-color: #BAD459;
   align-items: center;
   display: flex;
@@ -16,20 +17,18 @@
   font-size: 12px;
 }
 
-.pipe {
+.diagram__pipe {
   width: 40px;
   height: 3px;
   background-color: gray;
   align-self: center;
 }
 
-
-
-.circle_violet {
+.diagram__circle_violet {
   background-color: #A04999;
 }
 
-.circle_grey {
+.diagram__circle_grey {
   background-color: #CDCDCD;
 }
 
