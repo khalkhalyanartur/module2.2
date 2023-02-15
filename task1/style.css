@@ -1,0 +1,34 @@
+.battery {
+  display: flex;
+}
+
+.battery-frame {
+  width: 30vw;
+  height: 10vw;
+  border: 0.5vw solid black;
+}
+
+.battery__charge20 {
+  height: inherit;
+  width:calc(20%);
+  background-color: red;
+}
+
+.battery__charge80 {
+  height: inherit;
+  width:calc(80%);
+  background-color:darkorange
+}
+
+.battery__charge100 {
+  height: inherit;
+  width:calc(100%);
+  background-color: green;
+}
+
+.battery__pip {
+  align-self: center;
+  width: 2vw;
+  height: 4vw;
+  background-color: black;
+}
