@@ -1,0 +1,17 @@
+.indicator{
+  width: 100%;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom, black,gray );
+}
+
+.indicator__progress {
+  width: 90%;
+  height: 18px;
+  background-image:linear-gradient(180deg, rgba(105,185,244,1) 0%, rgba(57,144,234,1) 56%, rgba(108,190,245,1) 100%);
+  border-radius: 10px 0 0 10px;
+  border: 1px #358be9 solid;
+  box-shadow: 2px 0px 2px;
+
+}
