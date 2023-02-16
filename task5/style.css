@@ -1,0 +1,17 @@
+.button {
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px 10px 20px;
+  background: white;
+}
+
+.button:hover {
+  background:linear-gradient(0deg, rgba(228,228,207,1) 0%, rgba(255,255,255,1) 100%);
+  color: rgb(185, 75, 75);
+  cursor: pointer;
+}
+
+body {
+  padding: 30px;
+}
