@@ -1,0 +1,35 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+.item {
+  border: 1px solid blue;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.conteiner {
+  display: grid;
+  grid-template-areas: 
+    'header header'
+    'sidebar content';
+  gap: 10px;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 100px 1fr;
+}
+
+.header {
+  grid-area: header;
+
+};
+
+.sidebar {
+  grid-area: sidebar;
+  align-self: start;
+};
+
+.content {
+  grid-area: content;
+};
