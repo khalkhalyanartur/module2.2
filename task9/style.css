@@ -1,35 +1,155 @@
-* {
-  margin:0;
-  padding:0;
-}
-
-.item {
-  border: 1px solid blue;
-  font-size: 20px;
-  padding: 0;
+body {
   margin: 0;
 }
 
-.conteiner {
-  display: grid;
-  grid-template-areas: 
-    'header header'
-    'sidebar content';
-  gap: 10px;
-  grid-template-columns: 250px 1fr;
-  grid-template-rows: 100px 1fr;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
-.header {
-  grid-area: header;
+.title {
+  font-size: 4.5rem;
+  font-family: 'Merriweather', serif;
+  color: #0045be;
+}
+.main-img {
+  border-radius: 50%;
+  width: 854px;
+  height: 854px;
+}
 
-};
 
-.sidebar {
-  grid-area: sidebar;
-  align-self: start;
-};
 
-.content {
-  grid-area: content;
-};
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: white;
+  box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 10%);
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  width: 292px;
+  box-sizing: border-box;
+}
+
+.card-img {
+  width: 44px;
+  height: 44px;
+}
+
+
+.card-image-wrapper {
+  background-color: #0045be;;
+  height: 76px;
+  width: 76px;
+  margin: 20px 0 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+
+  
+}
+.cards__title {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+.card__text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+footer {
+  height: 165px;
+  background-color: #333333;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.text-footer {
+  width: 414px;
+  height: 67px;
+  color: white;
+  margin: 20px;
+}
+
+.cards-wrapper {
+  min-height: 624px;
+  grid-template-columns: repeat(3, calc(33.3333% - 33.3333px));
+  height: auto;
+  width: 976px;
+  gap: 50px;
+  margin: -239px auto 50px;
+  display: grid;
+  justify-content: center;
+  
+}
+
+@media screen and (max-width: 1199px){
+  .cards-wrapper {
+    min-height: 515px;
+    grid-template-columns: repeat(3, calc(33.333333333333336% - 33.3333px));
+    width: 940px;
+    
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .cards-wrapper {
+    min-height: 888px;
+    grid-template-columns: repeat(2, calc(50% - 25px));
+    width: 720px;
+    margin-top: -99px;
+  }  
+
+  .main-img {
+    width: 714px;
+    height: 714px;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cards-wrapper {
+    min-height: 1040px;
+    margin-top: -64px;
+    width: auto;
+  }
+  .title {
+    font-size: 3rem;
+  }
+}
+
+
+@media screen and (max-width: 575px) {
+  .cards-wrapper {
+    grid-template-columns: 100%;
+    margin-top: -40px;
+  }
+
+  .main-img {
+    width: 379px;
+    height: 379px;
+  }
+
+  .title {
+    font-size: 2.25rem;
+  }
+}
